@@ -7,6 +7,7 @@
 
 #include <cstdlib>
 #include <iostream>
+#include "ClassHello.h"
 
 using namespace std;
 
@@ -15,7 +16,10 @@ using namespace std;
  */
 int main(int argc, char** argv) {
     
-    cout<<"Hello world"<<endl;
+    ClassHello *myclass=new ClassHello("Solomon");
+    cout<<myclass->message()<<endl;
+    
+    delete myclass;
     return 0;
 }
 
